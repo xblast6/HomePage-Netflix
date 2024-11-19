@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    background-color: #141414;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.contenitore-destra-navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.foto-profilo {
+    
+    display: flex;
+    align-items: center;
+}
+
+.foto-profilo img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.nome-profilo {
+    width: fit-content;
+}
+
+.genere-film {
+    border: 1px solid white;
+    border-radius: 5pt;
+    transition: all 0.7s ease-in-out;
+}
+
+.genere-film:hover {
+    border: 1px solid white;
+    background-color: white;
+}
+
+.genere-film:hover span {
+    color: #141414;
+}
+
+.icona {
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.lista-film {
+    overflow-x: auto; 
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; 
+}
+
+
+.lista-film::-webkit-scrollbar {
+    display: none;
+}
+
+
+.contenitore-icone-film-card {
+    position: absolute;
+    bottom: 20px;
+    flex: 0 0 auto;
+}
+
+
+.tasto-play, .tasto-preferiti {
+    background-color: white;
+    color: #141414;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.contenitore-film-card {
+    transition: all 0.6s ease-in-out;
+    z-index: 9;
+    
+}
+
+.contenitore-film-card:hover {
+    transform: scale(1.2);
+}
+
+.contenitore-film-card:hover img {
+    z-index: 11;
+}
+
+.contenitore-film-card:hover .tasto-play {
+    opacity: 1;
+}
+
+.tasto-play:hover {
+    color: white;
+    background-color: #141414;
+}
+
+.contenitore-film-card:hover .tasto-preferiti {
+    opacity: 1;
+}
+
+.tasto-preferiti:hover {
+    color: white;
+    background-color: #141414;
+}
+
+.tasto-scorrimento {
+    background-color: #858585cb;
+    color: white;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5pt;
+    cursor: pointer;
+    z-index: 10;
+    top:95px;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.dietro {
+    left: -10px;
+}
+
+.avanti {
+    right: -10px;
+}
+
+.contenitore-hover:hover .tasto-scorrimento {
+    opacity: 1;
+}
+
+
+.tasto-scorrimento ion-icon {
+    font-size: 10px;
+    padding: 10px;
+}
+
+.contenitore-icona-footer {
+    width: fit-content;
+}
+
+.contenitore-icona-footer ion-icon,.copyright, .voci-footer {
+    color: #858585;
+}
+
+.voci-footer {
+    display: block;
+}
+
+
+
+.pulsante-footer  {
+    color: #858585;
+    text-decoration: none;
+    border: 1px solid #858585 ;
+    padding: 5px 10px;
+    width: fit-content;
+    transition: all 0.3s ease-in;
+}
+
+.pulsante-footer a {
+    color: #858585;
+    text-decoration: none;
+}
+
+.pulsante-footer:hover  {
+    color: #141414;
+    background-color: #858585;
+}
+
+
+
